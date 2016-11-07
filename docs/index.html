@@ -8,73 +8,131 @@
     <script src="static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css"/>
     <link href="static/css/sticky-footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css" type="text/css"/>
   </head>
   <body>
-     <div class="container-fluid">
-       <div class="row">
-         <div class="col-xs-12 col-md-4">Some text 1</div>
-         <div class="col-xs-12 col-md-8">Some text 2</div>
-       </div>
-     </div>
-
-
-    <h1>Name Here</h1>
-    <h2>Job here</h2>
-    <img img src="static/images/avatar.jpg" alt="It's me" height="60" width="60">
-    
-    <div>
-      Moscow, Russia 	25th January 1991
-    </div>
-    
-    <div>
-      <h2>Contacts</h2>
-      +7(925)578-00-03	etsu.nikolaev@gmail.com
-    </div>
-    
-    <div>
-      <h2>Education</h2>
-      2014 - present  Moscow institute of Physics and Technology (MIPT)	
-      PhD student
-      Guidance,Navigation and Control
-
-      Dissertation: 
-      Application of Satellite Navigation in Spacecrafts' Motion Control
-
-      2008 – 2014    Moscow institute of Physics and Technology (MIPT)
-      MS in GNC
-
-      Dissertation: 
-      Development of Reserve Stabilization Circuit based on FPGA
-
-      2008 – 1998    School №11, Novocheboksarsk
-
-    </div>
-    
-    <div>
-      <h2>Work Experience</h2>
-      11/2014 – Present    Yaliny Ltd     ACS EngineeTaking part in development low-orbit communication satellite
-    •	Attitude control system development
-    •	Implementation and verification of control system algorithms
-    •	Control system simulation
-
-    11/2013 – 10/2014    Sputnix Ltd     FPGA Engineer
-    •	Taking part in development of microsatellite TabletSat Aurora.
-    •	Development of low-power rate sensor for microsatellites based on ProASIC3 FPGA and MEMS gyroscope
-    •	Development mathematical model of rate sensor
-    •	Calibration of the rate sensor
-    •	Thermal testing
-
-    </div>
-    <div>
-      <h2>Patients</h2>
-      Patent on an utility model “Attitude and control system of microsatellite platform "Tabletsat" ( № 145978, 2014)
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Place footer content here.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4  left-col top-row text-center">
+          <button id="printBtn" class="button" onclick="javascript:print();"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print CV</button>
+        </div>
       </div>
-    </footer>
+      <div class="row name">
+          <h1>Dmitry Nikolaev <small>ACS engineer</small></h1>
+      </div>
+      <div class="row match-my-cols">
+        <div class="col-md-4 left-col">
+          <div><img src="static/images/avatar.jpg" alt="It's me" height="200" width="200"></div>
+          <div  style="padding-top: 20px">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Moscow, Russia
+            <br>
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 25th January 1991
+          </div>
+
+          <div style="padding-top: 20px">
+            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> +7(925)578-00-03
+            <br>
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> etsu.nikolaev@gmail.com
+            <br>
+            <a href="https://github.com/EtsuNDmA">github.com/EtsuNDmA</a>
+            <br>
+            <a href="https://vk.com/etsu.nikolaev">vk.com/etsu.nikolaev</a>
+          </div>
+        </div>
+        <div class="col-md-8 right-col">
+          <div>
+            <h3>Skills</h3>
+            <hr >
+            Computer Simulation:
+            <ul>
+              <li>Simulation of satellite attitude (nonlinear dynamical system)
+              <li>Simulation of satellite subsystems
+              <li>Development stochastic models of sensors, actuators and space environment
+              <li>Development of optimal estimators and controllers
+              <li>Kalman filters (UKF, EKF)
+            </ul>
+            Programming:
+            <ul>
+              <li>Matlab/Simulink, working knowledge
+              <li>Python - basic knowledge
+              <li>HTML/CSS/JavaScript -  basic knowledge
+              <li>SQL - basic knowledge
+            </ul>
+            Tools:
+            <ul>
+              <li>Matlab/Simulink
+              <li>Anaconda (Python scipy/numpy/matplotlib)
+              <li>Django
+              <li>Version control: Git, SVN
+            </ul>
+            Languages:
+            <ul>
+              <li>Russian, native speaker
+              <li>English, upper intermediate
+            </ul>
+            Others:
+            <ul>
+              <li>VHDL, FPGA design
+              <li>Newby in Data mining
+            </ul>
+          </div>
+          <div>
+            <h3>Work Experience</h3>
+            <hr>
+            <p><u>11/2014 – Present</u><span class="text-uppercase"> Yaliny Ltd</span></p>
+            <p><strong>ACS Engineer</strong><br>
+
+              <ul>
+                <li>Taking part in development low-orbit communication satellite
+                <li>Attitude control system development
+                <li>Implementation and verification of control system algorithms
+                <li>Control system simulation
+              </ul>
+            </p>
+            <br>
+            <p><u>11/2013 – 10/2014</u><span class="text-uppercase"> Sputnix Ltd</span></p>
+            <p><strong>FPGA Engineer</strong>
+              <ul>
+                <li>Taking part in development of microsatellite TabletSat Aurora.
+                <li>Development of low-power rate sensor for microsatellites based on ProASIC3 FPGA and MEMS gyroscope
+                <li>Development mathematical model of rate sensor
+                <li>Calibration of the rate sensor
+                <li>Thermal testing
+              </ul>
+            </p>
+
+          </div>
+          <div>
+            <h3>Education</h3>
+            <hr>
+            <div>
+              <u>2014 - present</u>
+              <p class="text-uppercase">Moscow institute of Physics and Technology (MIPT)</p>
+              <p><em>PhD student, Guidance,Navigation and Control</em></p>
+              <p><u>Dissertation:</u> Application of Satellite Navigation in Spacecrafts' Motion Control</p>
+            </div>
+            <div>
+              <u>2008 – 2014</u>
+              <p class="text-uppercase">Moscow institute of Physics and Technology (MIPT)</p>
+              <p><em>MS, Guidance,Navigation and Control</em> <p>
+              <p><u>Dissertation:</u> Development of Reserve Stabilization Circuit based on FPGA</p>
+            </div>
+            <div>
+              <u>2008 – 1998</u>
+              <p class="text-uppercase">School №11, Novocheboksarsk</p>
+            </div>
+
+          </div>
+
+
+          <div>
+            <h3>Patients</h3>
+            <hr>
+            Patent on an utility model “Attitude and control system of microsatellite platform "Tabletsat" ( № 145978, 2014)
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
