@@ -2,6 +2,12 @@ body {
     background-color: #d3d3d3;
 }
 
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
 .name {
     border-left-style: solid;
     border-left-width: 15px;
